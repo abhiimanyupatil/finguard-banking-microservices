@@ -17,13 +17,25 @@ spring:
       maximum-pool-size: 10
       minimum-idle: 2
 
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    validate-on-migrate: true
+    clean-disabled: true
+    baseline-on-migrate: false
+    out-of-order: false
+
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: none
+      ddl-auto: validate
     properties:
       hibernate:
         format_sql: true
+
+  sql:
+    init:
+      mode: never
 
   lifecycle:
     timeout-per-shutdown-phase: 20s
@@ -43,7 +55,7 @@ management:
 info:
   app:
     name: FinGuard Auth Service
-    description: Authentication and identity service foundation
+    description: Authentication and identity service
     version: 1.0.0-SNAPSHOT
 
 logging:
@@ -51,3 +63,4 @@ logging:
     root: INFO
     com.banking.auth: INFO
     org.hibernate.SQL: INFO
+    org.flywaydb: INFO
