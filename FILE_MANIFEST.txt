@@ -1,0 +1,17 @@
+.env.example
+.gitignore
+.mvn/maven.config
+FILE_MANIFEST.txt
+README.md
+docker-compose.yml
+docs/PHASE_0_DECISIONS.md
+infrastructure/kafka/create-topics.sh
+infrastructure/mysql/init/01-create-databases-and-users.sh
+infrastructure/redis/redis.conf
+pom.xml
+scripts/reset-infrastructure.ps1
+scripts/reset-infrastructure.sh
+scripts/start-infrastructure.ps1
+scripts/start-infrastructure.sh
+scripts/stop-infrastructure.ps1
+scripts/stop-infrastructure.sh

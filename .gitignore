@@ -1,0 +1,28 @@
+# Environment secrets
+.env
+*.local
+
+# Maven
+**/target/
+.mvn/timing.properties
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and runtime data
+logs/
+*.log
+
+# Frontend/Python modules added later
+**/node_modules/
+**/__pycache__/
+**/.venv/
